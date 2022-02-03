@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .principal {
+    width: 350px;
+    min-height: 375px;
+    background-color: #fff;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 40px 100px hsla(229, 23%, 23%, 0.3);
+  }
+
+  .perfil {
+    background-image: url(images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: 90px;
+  }
+
+  section {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nombre {
+    display: flex;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 9px 0 0;
+    color: var(--Very-dark-desaturated-blue);
+  }
+
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+.nombre p{
+    font-size: 18px;
+    color: var(--Dark-grayish-blue);
+  }
+
+.gris {
+    font-size: 14px;
+    padding-top: 8px;
+    color: var(--Dark-grayish-blue);
+  }
+
+  hr {
+    height: 0.7px;
+    width: 100%;
+    background-color: var(--dark-gray);
+    opacity: 0.3;
+    margin-top: 25.5px;
+  }
+
+  .estadisticas {
+    align-self: center;
+    width: 100%;
+    padding: 24px 48px;
+    display: flex;
+  }
+  
+  .dato1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.estadisticas p{
+    padding-top: 4.5px;
+    font-size: 10px;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
+.dato2 {
+  padding-left: 48px;
+}
+
+.dato3 {
+  padding-left: 58px;
+}
